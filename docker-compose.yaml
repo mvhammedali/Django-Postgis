@@ -14,25 +14,14 @@ services:
     ports:
       - "5434:5432"
 
-  redis:
-    image: redis
-    container_name: redis
-    ports:
-      - "6379:6379"
-
-  backend-api:
+  api:
     build:
-      context: ./backend
-      dockerfile: Dockerfile_CPU
+      context: .
+      dockerfile: Dockerfile
     container_name: api
     command: python manage.py runserver 0.0.0.0:8000
 
     ports:
       - 8000:8000
-    volumes:
-      - ./backend:/app
-      - ${RAMP_HOME}:/RAMP_HOME
-      - ${TRAINING_WORKSPACE}:/TRAINING_WORKSPACE
     depends_on:
-      - redis
       - postgres
