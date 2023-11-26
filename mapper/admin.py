@@ -3,13 +3,13 @@ from mapper.models import PointFeature, LineFeature, PolygonFeature
 from django.contrib.gis.admin import OSMGeoAdmin
 
 @admin.register(PointFeature)
-class LonLatAdmin(OSMGeoAdmin):
+class LineFeatureAdmin(OSMGeoAdmin):
     list_display = ('user', 'name', 'geom')
 
 @admin.register(LineFeature)
-class RoadsAdmin(OSMGeoAdmin):
+class LineFeatureAdmin(OSMGeoAdmin):
     list_display = ('user', 'name', 'geom')
 
 @admin.register(PolygonFeature)
-class CountriesAdmin(OSMGeoAdmin):
+class PolygonFeatureAdmin(OSMGeoAdmin):
     list_display = ('user', 'name', 'geom')

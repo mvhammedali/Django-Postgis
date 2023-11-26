@@ -1,4 +1,4 @@
-FROM  python:3.10-slim
+FROM  python:3.10
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -12,9 +12,11 @@ RUN apt-get update \
     && apt-get install -y \
         binutils \
         libproj-dev \
+        libgdal-dev \
         gdal-bin \
         libgdal-dev \
         postgis \
+        python3-gdal \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies

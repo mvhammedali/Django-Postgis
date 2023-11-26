@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'django.contrib.gis',
 
     # New apps
     "mapper",
@@ -84,7 +85,7 @@ DATABASES = {
         'NAME': 'template',
         'USER': 'postgres',
         'PASSWORD': 'secure-password',
-        'HOST': 'localhost',
+        'HOST': 'postgres',
         'PORT': '5432',
     }
 }

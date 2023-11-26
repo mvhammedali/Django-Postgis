@@ -1,16 +1,14 @@
-version: "3.8"
+version: "3.9"
 
 services:
   postgres:
     restart: always
-    image: postgis/postgis
+    image: kartoza/postgis:12.0
     container_name: pgsql
     environment:
       - POSTGRES_DB=template
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=secure-password
-    volumes:
-      - ./postgres-data:/var/lib/postgresql/data
     ports:
       - "5434:5432"
 
@@ -25,3 +23,6 @@ services:
       - 8000:8000
     depends_on:
       - postgres
+      
+volumes:
+  postgres_data: 
