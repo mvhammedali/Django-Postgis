@@ -1,6 +1,6 @@
 # Django and PostGIS Template
 
-This is a starter template for building a mapper application with PostGIS and Django.
+This is a starter template for building a mapper application with PostGIS and Django. With these starter features, you can kickstart the development of a  mapper application tailored to your apecific needsin PostGIS and Django.
 
 ## Features
 
@@ -18,8 +18,6 @@ This is a starter template for building a mapper application with PostGIS and Dj
 
 5. **Deployment with Docker**
 
-By incorporating these features into the template, developers can kickstart the development of a robust mapper application tailored to their needs while leveraging the power of PostGIS and Django.
-
 ## Build and run the application
 - Build and run your Docker containers:
 
@@ -28,5 +26,3 @@ docker-compose up --build
 ```
 - Access Your Application:
 Once the containers are up and running, you can access your Django application at http://localhost:8000 in your browser.
-
-This Docker configuration will create a containerized environment for running your Django application with PostGIS, making it easy to deploy and manage in different environments.
