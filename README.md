@@ -19,6 +19,7 @@ This is a starter template for building a mapper application (or any application
 5. **Deployment with Docker**
 
 ## Build and run the application
+- Fork and clone this repository.
 - Build and run your Docker containers:
 
 ```bash
