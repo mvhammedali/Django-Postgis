@@ -14,6 +14,7 @@ RUN apt-get update \
         libproj-dev \
         gdal-bin \
         libgdal-dev \
+        postgis \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
@@ -23,12 +24,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy project files into the container
 COPY . /api/
 
-# Run migrations and collect static files
-RUN python manage.py migrate
-RUN python manage.py collectstatic --noinput
 
 # Expose the port that Django runs on
 EXPOSE 8000
 
-# Command to run the Django development server
 # CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     # New apps
     "mapper",
-    "auth"
+    "user"
 
 ]
 

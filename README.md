@@ -8,7 +8,7 @@ This is a starter template for building a mapper application (or any application
    - Ability to store and manage geographical features such as points, lines, and polygons in the database using PostGIS.
 
 2. **Map Display**:
-   - Integration with mapping libraries like Leaflet.js or Mapbox to display the stored geographical features on an interactive map interface.
+   - Developed the Django admin to store and display a visual representation of maps.
 
 3. **User Authentication and Authorization**:
    - User authentication and authorization to control access to the mapping application and its features based on user roles and permissions.
