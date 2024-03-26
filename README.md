@@ -26,3 +26,5 @@ docker-compose up --build
 ```
 - Access Your Application:
 Once the containers are up and running, you can access your Django application at http://localhost:8000 in your browser.
+
+![ezgif-1-9a677c314c](https://github.com/mvhammedali/Django-Postgis/assets/101676470/2f05795a-6c20-4126-986a-bc72269aeb25)
