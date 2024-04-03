@@ -1,6 +1,7 @@
 # Django and PostGIS Template
 
 This is a starter template for building a mapper application (or any application involving spatial data) with [PostGIS](https://postgis.net/) and [Django](https://www.djangoproject.com/). With these starter features, you can kickstart the development of a mapper application tailored to your specific needs in PostGIS and Django.
+Here is a GIF of what it looks like:
 ![ezgif-1-9a677c314c](https://github.com/mvhammedali/Django-Postgis/assets/101676470/2f05795a-6c20-4126-986a-bc72269aeb25)
 
 ## Features
