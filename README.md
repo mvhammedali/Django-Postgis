@@ -25,7 +25,7 @@ Here is a GIF of what it looks like:
 - Build and run your Docker containers:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 - Access Your Application:
 Once the containers are up and running, you can access your Django application at http://localhost:8000 in your browser.
